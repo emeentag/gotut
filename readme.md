@@ -9,7 +9,7 @@ In this repo i tried to practice essential programming under several branches. Y
 - maps
 - loops
 - multiple returns
-- runStruct
+- structs
 - pointers
 - channels
 
