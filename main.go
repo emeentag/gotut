@@ -3,14 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	slices()
+	maps()
 }
 
-func slices() {
-	var ss []int
-	ss = append(ss, 1, 2, 3, 4, 5)
-	fmt.Println(ss)
+func maps() {
+	vertices := make(map[string]int)
+	vertices["one"] = 1
+	vertices["two"] = 2
+	vertices["three"] = 3
 
-	ss2 := []int{1, 2, 3, 4, 5, 6}
-	fmt.Println(ss2)
+	fmt.Println(vertices)
+	fmt.Println(vertices["two"])
+
+	delete(vertices, "two")
+	fmt.Println("deleted", vertices)
 }
