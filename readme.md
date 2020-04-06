@@ -2,12 +2,13 @@
 
 In this repo i tried to practice essential programming under several branches. You can see what you can find in this repo over the remote branches down below:
 
+- functions
 - conditions
 - arrays
 - slices
 - maps
 - loops
-- returnMultiple
+- multiple returns
 - runStruct
 - pointers
 - channels
