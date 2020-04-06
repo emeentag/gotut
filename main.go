@@ -3,18 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	conditions(5)
-	conditions(15)
-	conditions(10)
+	arrays()
 }
 
-func conditions(x int) {
-	if x == 10 {
-		fmt.Printf("%d is equal to 10\n", x)
-	} else if x > 10 {
-		fmt.Printf("%d is greater than 10\n", x)
-	} else {
-		fmt.Printf("%d is less than 10\n", x)
-	}
+func arrays() {
+	var arr [5]int
+	arr[2] = 7
+	fmt.Println(arr)
 
+	arr2 := [5]int{1, 2, 3, 4, 5}
+	fmt.Println(arr2)
 }
