@@ -1,6 +1,6 @@
 ## Go Lang Essential Training
 
-In this repo i tried to practice essential programming under several branches. You can see what you can find in this repo over the remote branches down below:
+In this repo i tried to practice essential go lang programming under several branches. You can see what you can find in this repo over the remote branches down below:
 
 - [functions](https://github.com/emeentag/gotut/blob/functions/main.go)
 - [conditions](https://github.com/emeentag/gotut/blob/conditions/main.go)
