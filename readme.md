@@ -11,6 +11,6 @@ In this repo i tried to practice essential programming under several branches. Y
 - [multiple returns](https://github.com/emeentag/gotut/blob/multiple-returns/main.go)
 - [structs](https://github.com/emeentag/gotut/blob/structs/main.go)
 - [pointers](https://github.com/emeentag/gotut/blob/pointers/main.go)
-- [channels](https://github.com/emeentag/gotut/blob/channels/main.go)
+- channels
 
 **You can find a remote branch for each example.**
