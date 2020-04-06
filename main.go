@@ -3,14 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	arrays()
+	slices()
 }
 
-func arrays() {
-	var arr [5]int
-	arr[2] = 7
-	fmt.Println(arr)
+func slices() {
+	var ss []int
+	ss = append(ss, 1, 2, 3, 4, 5)
+	fmt.Println(ss)
 
-	arr2 := [5]int{1, 2, 3, 4, 5}
-	fmt.Println(arr2)
+	ss2 := []int{1, 2, 3, 4, 5, 6}
+	fmt.Println(ss2)
 }
