@@ -1,24 +1,30 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"errors"
+	"math"
+)
 
 func main() {
-	loops()
+	returnMultiple(16)
+	returnMultiple(-16)
 }
 
-func loops() {
-	for i := 0; i < 5; i++ {
-		fmt.Printf("idx: %d\n", i)
+func returnMultiple(num float64) {
+	result, error := sqrt(num)
+
+	if error != nil {
+		fmt.Println(error)
+	} else {
+		fmt.Println(result)
 	}
-	fmt.Println("------------loop like while-------------")
-	j := 0
-	for j < 5 {
-		fmt.Printf("jdx: %d\n", j)
-		j++
+}
+
+func sqrt(x float64) (float64, error) {
+	if x < 0 {
+		return -1, errors.New("Undifined for negative numbers")
 	}
-	fmt.Println("------------loop in arr-------------")
-	arr := []int{1, 2, 3, 4, 5}
-	for idx, val := range arr {
-		fmt.Println("index", idx, "value", val)
-	}
+
+	return math.Sqrt(x), nil
 }
