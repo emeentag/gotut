@@ -4,17 +4,25 @@ import (
 	"fmt"
 )
 
-type person struct {
-	name string
-	weight int
-}
-
 func main() {
-	runStruct()
+	pointers()
 }
 
-func runStruct() {
-	p := person{name: "serdar", weight: 75}
-	fmt.Println(p)
-	fmt.Println(p.weight)
+func pointers() {
+	x := 5
+	inc(x)
+	fmt.Println(x, &x)
+
+	fmt.Println("------------pointer-------------")
+
+	incP(&x)
+	fmt.Println(x, &x)
+}
+
+func inc(p int) {
+	p++
+}
+
+func incP(p *int) {
+	*p++
 }
